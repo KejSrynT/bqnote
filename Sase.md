@@ -130,6 +130,9 @@ SASE, kullanıcıyı merkeze alır. Çalışma mantığı şu üç ana prensibe 
 
 ## 3. Berqnet SASE’yi Geleneksel VPN’den Farklı Kılan Nedir?
 
+> Tek bir platformda ağ ve güvenliği birleştirir, VPN’lerin karmaşıklığını ortadan kaldırır.
+
+
 | Özellik | Geleneksel VPN | Berqnet SASE |
 | :--- | :--- | :--- |
 | **Bağlantı Noktası** | Trafik önce şirket merkezindeki cihaza gider, oradan internete çıkar. | Kullanıcı direkt bulut üzerinden güvenli internete çıkar (Hızlıdır). |
@@ -149,3 +152,10 @@ Eskiden şirketin dosyalarına bakmak için fiziksel ofis binasına (Firewall) g
 * Bu kartla dünyanın neresinde olursan ol, sana en yakın güvenlik noktasına gidersin. 
 * Kartın senin kimliğini, parmak izini ve üzerindeki kıyafetlerin temizliğini (cihaz güvenliği) anında kontrol eder. 
 * Sana tüm binanın anahtarını vermez; kartın sadece **"C odasındaki X dosyasını"** görmene izin verir. Başka bir dosyaya bakmak istersen, kartın yetkini anında tekrar sorgular.
+
+
+
+
+#### Firewall as a Service (FWaaS) Nedir?
+
+Firewall as a Service (FWaaS), bulut üzerinden sunulan güvenlik duvarı hizmetidir.
