@@ -81,6 +81,14 @@ Afrika(config-router)#network 40.0.0.0 0.255.255.255
 Afrika(config-router)#network 192.68.1.0 0.0.0.255
 !! no auto summary
 
+Afrika(config)#key chain Anahtar1
+Afrika(config-keychain)#key 1
+Afrika(config-keychain-key)#key-string M23041920K
+
+Afrika(config)#interface GigabitEthernet 0/1
+Afrika(config-if)#ip authentication mode eigrp 10 md5
+Afrika(config-if)#ip authentication key-chain eigrp 10 Anahtar1
+
 
 Asya(config)#ip route 0.0.0.0 0.0.0.0 Serial0/1/0
 Asya(config)#router eigrp 10
@@ -96,7 +104,7 @@ Yonlendirici(config-router)#network ‘Arayüz Ağ Adresi’ mask ‘Ağ Alt Ağ
 PPP
 Ankara(config)#username kullanıcıadı password parola
 Ankara(config-if)#ppp authentication pap
-Ankara(config-if)#ppp sent-username kullanıcıadı password parola
+RT1(config-if)#ppp pap sent-username mtt password mtt
 
 Ankara(config)#interface serial 0/0/0
 Ankara(config-if)#encapsulation ppp
